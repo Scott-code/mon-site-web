@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+body{
+
+    font-family: sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(61, 59, 59);
+  width: 100%;
+  height: 8vh;
+  color: white;
+
+  padding: 0 2rem;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.toogle {
+  display: none;
+  position: relative;
+  z-index: 50;
+}
+
+.menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+list-style: none;
+
+width: 500px;
+
+
+}
+
+.menu li a{
+
+color: white;
+text-decoration: none;
+
+
+}
+
+
+.logo{
+    font-size: 2rem;
+    z-index: 20;
+}
+
+
+.btn{
+
+background: pink;
+border: none;
+border-radius: 4px;
+color: white;
+
+font-size: 1rem;
+
+padding: 0.5rem 1rem;
+
+opacity: 0.5;
+
+transition: opacity  0.5s ease;
+
+transform: scale(1);
+
+transition: transform 0.2s ease;
+
+}
+
+
+.btn:hover{
+
+opacity: 1;
+
+transform: scale(1.2);
+
+}
+
+.connexion{
+opacity: 0.5;
+
+background: none;
+color: white;
+border: 2px solid pink;
+transition: opacity  0.5s ease;
+transform: scale(1);
+
+transition: transform 0.2s ease;
+
+}
+
+
+
+.connexion:hover{
+
+opacity: 1;
+
+transform: scale(1.2);
+
+}
+
+
+
+
+
+
+/* hero */
+
+
+
+.hero{
+
+    height: 100vh;
+    background: url(../images/noir\ 2.jpg);
+
+
+
+background-size: cover;
+background-position: center;
+
+}
+
+
+
+
+
+
+@media all and (max-width:991px){
+
+.toogle{
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+
+
+
+.ouvrir{
+    display: block;
+    
+}
+.fermer{
+    display: none;
+    
+}
+
+
+
+.open .ouvrir{
+
+display: none;
+
+
+
+
+}
+
+.open .fermer{
+display: block;
+
+
+}
+
+
+.menu{
+
+position: absolute;
+top: 0;
+left: 0;
+
+width: 100%;
+height: 100vh;
+flex-direction: column;
+background: rgba(0, 0, 0, 0.555);
+
+transform: translate(-100%);
+padding: 30px 0px 25px 0px;
+
+transition: transform 0.5s ease;
+
+
+}
+
+
+.menu li a{
+font-size: 2rem;
+
+}
+
+.btn{
+    font-size: 2rem;
+}
+
+
+.open .menu{
+
+
+transform: translate(0px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

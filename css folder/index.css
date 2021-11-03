@@ -10,6 +10,8 @@
 body{
 
     font-family: sans-serif;
+
+    overflow: hidden;
 }
 
 header {
@@ -84,6 +86,7 @@ transition: opacity  0.5s ease;
 transform: scale(1);
 
 transition: transform 0.2s ease;
+z-index: 100;
 
 }
 
@@ -131,7 +134,7 @@ transform: scale(1.2);
 .hero{
 
     height: 100vh;
-    background: url(../images/noir\ 2.jpg);
+    background: url(../images/noir\ 1.jpg);
 
 
 
@@ -145,94 +148,286 @@ background-position: center;
 
 
 
+
+.textmove{
+
+  color: white;
+
+
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  display: flex;
+
+  width: 75%;
+ 
+  
+  }
+
+
+  .letter{
+
+display: inline-block;
+text-transform: uppercase;
+font-size: 5rem;
+font-weight: bold;
+opacity: 0;
+
+
+
+
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#1f1515));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+
+
+  }
+
+  .contain_scott{
+
+display: flex;
+
+justify-content: space-around;
+
+
+
+
+  }
+
+
+
+
+
+
+  .image_scott{
+
+
+
+    
+border: 3px solid white;
+
+border-radius: 50%;
+
+position: absolute;
+
+background-size:cover;
+
+width: 700px;
+height: 700px;
+
+background: url(../images/image\ scott.png);
+
+background-color: gray;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 500px;
+
+
+top: 20%;
+
+left: 5%;
+
+
+
+
+  }
+
+
+
+
+
+
+  div.separateur{
+
+
+display: inline-block;
+width: 20px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 @media all and (max-width:991px){
 
-.toogle{
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    
-}
+  .toogle{
+      display: block;
+      font-size: 2rem;
+      cursor: pointer;
+      
+  }
+  
+  
+  
+  
+  .ouvrir{
+      display: block;
+      
+  }
+  .fermer{
+      display: none;
+      
+  }
+  
+  
+  
+  .open .ouvrir{
+  
+  display: none;
+  
+  
+  
+  
+  }
+  
+  .open .fermer{
+  display: block;
+  
+  
+  }
+  
+  
+  .menu{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.555);
+  
+  transform: translate(-100%);
+  padding: 30px 0px 25px 0px;
+  
+  transition: transform 0.5s ease;
+  
+  
+  }
+  
+  
+  .menu li a{
+  font-size: 2rem;
+  z-index: 100;
+  }
+  
+  .btn{
+      font-size: 2rem;
+      z-index: 100;
+  }
+  
+  
+  .open .menu{
+  
+  
+  transform: translate(0px);
+  
+  }
+
+  
+
+  .image_scott{
+
+position: absolute;
+top: 25%;
+
+left: 100px;
 
 
 
 
-.ouvrir{
-    display: block;
-    
-}
-.fermer{
-    display: none;
-    
-}
+background-position-x: 100px;
 
 
 
-.open .ouvrir{
+background-color: gray;
+
+
+
+  }
+
+
+
+  .textmove{
+
+transform: translateX(-310px);
+width: 100%;
+
+  }
+
+
+  .letter{
+font-size: 50px;
+
+  }
+
+  .open .letter{
 
 display: none;
 
+  }
+
+  body{
+
+    overflow-y:scroll ;
+    
+      }
+
+      .image_scott{
+
+border-radius: 0%;
+
+background-color: transparent;
+transform: translateX(-300px);
+width: 500px;
 
 
+      }
 
-}
+  .open .image_scott{
 
-.open .fermer{
-display: block;
+    display: none;
+  }
 
-
-}
-
-
-.menu{
-
-position: absolute;
-top: 0;
-left: 0;
-
-width: 100%;
-height: 100vh;
-flex-direction: column;
-background: rgba(0, 0, 0, 0.555);
-
-transform: translate(-100%);
-padding: 30px 0px 25px 0px;
-
-transition: transform 0.5s ease;
+.hero{
 
 
-}
-
-
-.menu li a{
-font-size: 2rem;
-
-}
-
-.btn{
-    font-size: 2rem;
-}
-
-
-.open .menu{
-
-
-transform: translate(0px);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+  background-repeat: repeat-y;
+  background: white;
 
 
 }
+
+
+#graph{
+
+  transform: translateX(-5000px);
+}
+  
+  
+  }
